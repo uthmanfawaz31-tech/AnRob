@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnRob Apps Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard">
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-left">
+      <span class="logo">AnRob Apps</span>
+    </div>
+    <div class="header-right">
+      <div class="language-options">
+        <span class="lang-link" id="polish-lang" onclick="switchLanguage('pl')">PL Polish</span>
+        <span class="lang-link active" id="english-lang" onclick="switchLanguage('en')">US English</span>
+      </div>
+      <button class="logout-btn" onclick="logout()" data-en="Log out" data-pl="Wyloguj">Log out</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Welcome Card -->
+    <div class="welcome-card">
+      <h1 data-en="Good morning! :)" data-pl="Dzień dobry! :)">Good morning! :)</h1>
+    </div>
+
+    <!-- Apps Grid -->
+    <div class="apps-grid">
+      <!-- IBx Card -->
+      <div class="app-card">
+        <div class="download-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3v18m0 0l-6-6m6 6l6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="app-title">
+          <span class="cloud-icon">☁️</span>
+          <span data-en="IBx" data-pl="IBx">IBx</span>
+        </h3>
+        <p class="downloader-code" data-en="Downloader CODE: 7883033" data-pl="Kod pobierania: 7883033">Downloader CODE: 7883033</p>
+        <div class="buttons">
+          <button class="download-btn blue" data-en="Download #1" data-pl="Pobierz #1" onclick="window.open('http://aftv.news/7883033', '_blank')">Download #1</button>
+          <button class="download-btn green" data-en="Download #2" data-pl="Pobierz #2" onclick="window.open('http://aftv.news/7883033', '_blank')">Download #2</button>
+        </div>
+      </div>
+
+      <!-- QSmart Card -->
+      <div class="app-card">
+        <div class="download-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3v18m0 0l-6-6m6 6l6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="app-title">
+          <span data-en="QSmart" data-pl="QSmart">QSmart</span>
+        </h3>
+        <p class="downloader-code" data-en="Downloader CODE: 3315301" data-pl="Kod pobierania: 3315301">Downloader CODE: 3315301</p>
+        <div class="buttons">
+          <button class="download-btn blue" data-en="Download #1" data-pl="Pobierz #1" onclick="window.open('http://aftv.news/3315301', '_blank')">Download #1</button>
+          <button class="download-btn green" data-en="Download #2" data-pl="Pobierz #2" onclick="window.open('http://aftv.news/3315301', '_blank')">Download #2</button>
+        </div>
+      </div>
+
+      <!-- TMaT Card -->
+      <div class="app-card">
+        <div class="download-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3v18m0 0l-6-6m6 6l6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="app-title">
+          <span data-en="TMaT" data-pl="TMaT">TMaT</span>
+        </h3>
+        <p class="downloader-code" data-en="Downloader CODE: 6530173" data-pl="Kod pobierania: 6530173">Downloader CODE: 6530173</p>
+        <div class="buttons">
+          <button class="download-btn blue" data-en="Download #1" data-pl="Pobierz #1" onclick="window.open('http://aftv.news/6530173', '_blank')">Download #1</button>
+          <button class="download-btn green" data-en="Download #2" data-pl="Pobierz #2" onclick="window.open('http://aftv.news/6530173', '_blank')">Download #2</button>
+        </div>
+      </div>
+
+      <!-- NioPlayer Card -->
+      <div class="app-card">
+        <div class="download-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3v18m0 0l-6-6m6 6l6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="app-title">
+          <span data-en="NioPlayer" data-pl="NioPlayer">NioPlayer</span>
+        </h3>
+        <p class="downloader-code" data-en="Downloader CODE: 8650248" data-pl="Kod pobierania: 8650248">Downloader CODE: 8650248</p>
+        <div class="buttons">
+          <button class="download-btn blue" data-en="Download #1" data-pl="Pobierz #1" onclick="window.open('http://aftv.news/8650248', '_blank')">Download #1</button>
+          <button class="download-btn green" data-en="Download #2" data-pl="Pobierz #2" onclick="window.open('http://aftv.news/8650248', '_blank')">Download #2</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
